@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #0073b7;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem; /* Use rem for better scaling */
+    margin: 0;
+  }
+  
+  /* Section principale */
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Section d'introduction */
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro h1 {
+    font-size: 2.25rem; /* Use rem for better scaling */
+    color: #3399ff;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1rem; /* Use rem for better scaling */
+    line-height: 1.5;
+    margin: 0 10%; /* Adjust margin based on content width */
+  }
+  
+  /* Section des étapes */
+  .steps {
+    margin-bottom: 40px;
+  }
+  
+  .steps h3 {
+    font-size: 1.25rem; /* Use rem for better scaling */
+    margin-bottom: 10px;
+  }
+  
+  .steps ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .steps li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .steps li a {
+    color: #0073b7;
+    text-decoration: none;
+  }
+  
+  /* Section du formulaire */
+  .form {
+    margin-bottom: 40px;
+  }
+  
+  .form label {
+    font-size: 1rem; /* Use rem for better scaling */
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form input,
+  .form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23ddd' stroke-width='1.5' stroke-linecap='round' d='M5 8l5 5 5-5'/></svg>");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 10px;
+  }
+  
+  #prix {
+    color: #219f11;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form button {
+    padding: 10px;
+    background-color: #0073b7;
+    color: #fff;
+    font-size: 1rem; /* Use rem for better scaling */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .form p {
+    font-size: 0.875rem; /* Use rem for better scaling */
+    color: #999;
+    margin-top: 10px;
+  }
+  
+  /* Section "Débloquez votre iPhone en toute simplicité" */
+  section h2 {
+    font-size: 1.25rem; /* Use rem for better scaling */
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 1rem; /* Use rem for better scaling */
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Section "Pourquoi choisir Official iCloud Unlock ?" */
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  background-color: #0073b7;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Médias queries pour les appareils mobiles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .intro p,
+  .steps li a,
+  .form p,
+  section p {
+    margin: 0 5%;
+  }
+
+  .steps ol,
+  section ul {
+    padding: 0 5%;
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  margin: 20px; /* Add margin around the body content */
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 1;
+  padding: 1;
+}
+
+main {
+  padding: 20px;
+}
+
+section.etapes {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+section.options-paiement {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a.bouton-paiement {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0073b7;
+  border-radius: 5px;
+}
+
+a.bouton-paiement:hover {
+  background-color: #005994;
+}
+
+img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.wise {
+  background-color: #77b255;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

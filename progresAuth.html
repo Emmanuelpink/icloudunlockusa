@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar Example</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #progress-bar {
+      width: 300px;
+      height: 20px;
+      border: 1px solid #ccc;
+      background-color: #ddd;
+      margin: 20px auto;
+    }
+
+    .bar {
+      width: 0%;
+      height: 100%;
+      background-color: #0c26c9;
+    }
+
+    #redirect-button {
+      display: none;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #2942e7;
+      font-size: 16px;
+      border: 1px solid #070316;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration and Processing.</h1>
+  <h1 id="message" style="color: gold">Please wait while loading.</h1>
+  <p id="imei-display" style="color: red;"></p>
+  <p id="model-display" style="color: #0c26c9;"></p>
+  <p id="price-display" style="color: green;"></p>
+  <div id="progress-bar">
+    <div class="bar"></div>
+  </div>
+  <button id="redirect-button">continue</button>
+  <script>
+    const progressBar = document.querySelector('#progress-bar');
+    const bar = document.querySelector('.bar');
+    const message = document.querySelector('#message');
+    const redirectButton = document.getElementById("redirect-button");
+
+    const progressBarMax = 100;
+
+    const defaultH1Message = "Loading...";
+    const defaultPMessage = "Please wait while loading...";
+    const replacedH1Message = "Loading complete!";
+    const replacedPMessage = "Click to continue.";
+
+    message.textContent = defaultPMessage;
+
+    // Start progress bar animation
+    let currentValue = 0;
+    const interval = setInterval(() => {
+      currentValue++;
+      manageProgress(currentValue);
+
+      if (currentValue >= progressBarMax) {
+        clearInterval(interval);
+      }
+    }, 120);
+
+    function manageProgress(currentValue) {
+      bar.style.width = `${currentValue}%`;
+
+      if (currentValue >= progressBarMax) {
+        progressBar.style.display = 'none';
+
+        // Show redirect button
+        redirectButton.style.display = "block";
+        message.textContent = replacedPMessage;
+      }
+
+      redirectButton.addEventListener("click", () => {
+        // Redirect to webpage
+        window.location.href = "paiement-crypto.html";
+      });
+    }
+    </script>
+    <script>
+ // progresAuth.html
+const imeiDisplay = document.getElementById('imei-display');
+const modelDisplay = document.getElementById('model-display');
+const priceDisplay = document.getElementById('price-display');
+const storedImei = localStorage.getItem('imei');
+const storedModel = localStorage.getItem('model');
+const storedPrice = localStorage.getItem('price');
+
+if (storedImei) {
+  imeiDisplay.textContent = `IMEI: ${storedImei}`;
+} else {
+  imeiDisplay.textContent = 'IMEI not found';
+}
+
+if (storedModel) {
+  modelDisplay.textContent = `Model: ${storedModel}`;
+} else {
+  modelDisplay.textContent = 'Model not found';
+}
+
+if (storedPrice) {
+  priceDisplay.textContent = `Price: $${storedPrice}`;
+} else {
+  priceDisplay.textContent = 'Price not found';
+}
+  </script>
+</body>
+</html>
