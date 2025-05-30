@@ -1,0 +1,394 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.primary-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.button-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section-title {
+  color: #0056b3;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-description {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.app-header {
+  background-color: #007bff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.app-title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.app-title strong {
+  color: #fff; /* Highlight the strong part of the title */
+}
+
+/* Main Content Styles */
+.app-main {
+  padding: 30px 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #e0f7fa 0%, #c5e1e6 100%);
+  color: #37474f;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #263238;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.hero-image-container {
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Instant Verification Section */
+.instant-verification {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.verification-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.status-message {
+  margin-top: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.verifying {
+  background-color: fff3cd;
+  color: #ff9800;
+  border: 1px solid #ffeeba;
+}
+
+.status-message.eligible {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-message.not-eligible {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.status-message.error {
+  background-color: #ffebee;
+  color: #d32f2f;
+  border: 1px solid #ef9a
+}
+
+/* Unlock Form Section */
+.unlock-form {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.unlock-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.error-input {
+  border-color: #d32f2f !important;
+}
+
+.price-display {
+  font-size: 1.1rem;
+  color: #43a047;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.warning-message {
+  background-color: #fff3e0;
+  color: red;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.warning-message span {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  background-color: #e3f2fd;
+  color: #1e88e5;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-item span {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #f0f4c3;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #558b2f;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  color: #33691e;
+}
+
+/* Footer Styles */
+.app-footer {
+  background-color: #333;
+  color: #f4f6f8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.legal-link {
+  color: #f4f6f8;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.legal-link:hover {
+  color: #ddd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image-container {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .verification-form,
+  .unlock-form-fields {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,285 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+header h1 {
+    color: #007bff;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    color: #28a745;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.steps {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.steps h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.steps ol {
+    padding-left: 20px;
+}
+
+.steps li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.steps li ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+.steps li ul li {
+    margin-bottom: 5px;
+}
+
+.steps li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.steps li a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.form-container h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group p#price {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-container p.warning {
+    color: darkred;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.unlock-info {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.unlock-info h2 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.unlock-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.why-choose {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.why-choose h2 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.why-choose ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-choose li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.why-choose li::before {
+    content: '➡️';
+    margin-right: 8px;
+    color: #28a745;
+}
+
+.contact {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact h2 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact li {
+    margin-bottom: 8px;
+}
+
+.contact li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container, .image-container {
+    display: none !important;
+}
